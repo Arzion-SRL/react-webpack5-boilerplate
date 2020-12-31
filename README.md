@@ -28,7 +28,7 @@ Start your next react project in seconds using this boilerplate.
 
 ## References
 
-React Setup [link](https://www.andrewmin.info/blog/react-setup/)
+- [React Setup](https://www.andrewmin.info/blog/react-setup/) :: Setup ESLint + Prettier + AirBnB Style with Create React App
 
 ## Support
 
