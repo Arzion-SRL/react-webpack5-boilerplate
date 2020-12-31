@@ -1,0 +1,88 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "eslint-plugin-align-assignments",
+    "prettier"
+  ],
+  "rules": {
+    "indent": [
+      "warn",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "padded-blocks": [
+      "error",
+      {
+        "switches": "never",
+        "blocks": "never",
+        "classes": "always"
+      }
+    ],
+    // "key-spacing": [
+    //   "error",
+    //   {
+    //     "align": {
+    //       "beforeColon": true,
+    //       "afterColon": true,
+    //       "on": "colon"
+    //     }
+    //   }
+    // ],
+    "object-curly-newline": [
+      "error",
+      {
+        "minProperties": 7,
+        "multiline": true
+      }
+    ],
+    "react/jsx-indent-props": [
+      "warn",
+      4
+    ],
+    "react/prefer-stateless-function": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/state-in-constructor": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+  }
+}}

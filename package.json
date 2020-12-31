@@ -1,0 +1,97 @@
+{
+  "name": "react-webpack5-boilerplate",
+  "version": "1.0.0",
+  "description": "A React & Webpack 5 Boilerplate",
+  "main": "src/index.js",
+  "private": true,
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true,
+          "corejs": 3
+        }
+      ],
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./src"
+          ],
+          "alias": {
+            "~components": "./src/library/components",
+            "~utils": "./src/library/utils",
+            "~main": "./src/main",
+            "~store": "./src/main/store",
+            "~modules": "./src/modules"
+          }
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack",
+    "lint": "eslint --ignore-path .eslintignore --ext .js --ext .jsx \".\"",
+    "lint:fix": "eslint --ignore-path .eslintignore --ext .js --ext .jsx \".\" --fix"
+  },
+  "keywords": [
+    "react",
+    "webpack 5",
+    "boilerplate"
+  ],
+  "author": " <Juan Rabadan> (arzion.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/plugin-transform-runtime": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "5.0.1",
+    "css-minimizer-webpack-plugin": "1.1.5",
+    "eslint": "7.16.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-import-resolver-babel-module": "5.2.0",
+    "eslint-plugin-align-assignments": "1.1.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "html-webpack-plugin": "5.0.0-beta.1",
+    "mini-css-extract-plugin": "1.3.3",
+    "prettier": "^2.2.1",
+    "react-hot-loader": "4.13.0",
+    "style-loader": "2.0.0",
+    "webpack": "5.11.1",
+    "webpack-cli": "4.3.0",
+    "webpack-dev-server": "3.11.1",
+    "webpack-manifest-plugin": "3.0.0"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "react-router-dom": "5.2.0",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "redux-devtools-extension": "2.13.8"
+  }
+}

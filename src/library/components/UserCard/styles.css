@@ -1,0 +1,7 @@
+.userCard {
+    border: 1px solid gray;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
