@@ -19,14 +19,14 @@ const config = {
     // entry: path.resolve(__dirname, './src/index.js'),
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: '[name].[contenthash].js',
+        filename: '[name].[contenthash:8].js',
         publicPath: '',
     },
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(less|css)$/,
+                use: ['style-loader', 'css-loader', 'less-loader'],
                 exclude: NODE_MODULES,
             },
             {
@@ -34,6 +34,11 @@ const config = {
                 use: ['babel-loader'],
                 include: APP_DIR,
                 exclude: NODE_MODULES,
+            },
+            {
+                test: /\.(png|gif|jpg|svg)$/,
+                exclude: NODE_MODULES,
+                loader: 'file-loader',
             },
         ],
     },
@@ -46,6 +51,7 @@ const config = {
             '~main': path.resolve(APP_DIR, 'main/'),
             '~store': path.resolve(APP_DIR, 'main/store/'),
             '~modules': path.resolve(APP_DIR, 'modules/'),
+            '~styles': path.resolve(APP_DIR, 'resources/styles/'),
         },
     },
     plugins: [],
@@ -88,7 +94,7 @@ if (currentTask === 'build') {
     config.mode = 'production';
     config.module.rules[0].use[0] = MiniCssExtractPlugin.loader;
     config.plugins.push(
-        new MiniCssExtractPlugin({ filename: 'main.[contenthash].css' }),
+        new MiniCssExtractPlugin({ filename: 'main.[contenthash:8].css' }),
         new CleanWebpackPlugin(),
         new WebpackManifestPlugin(),
         new HtmlWebpackPlugin({
