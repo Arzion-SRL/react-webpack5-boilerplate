@@ -7,10 +7,11 @@ Start your next react project in seconds using this boilerplate.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Packages](#packages)
-- [References](#references)
+- [Built with](#build-with)
 - [Support](#support)
-- [Contributing](#contributing)
+- [Versioning and Contributing](#versioning-and-contributing)
+- [Authos](#authors)
+- [Acknowledgments](#acknowledgments)
 
 ## Installation
 
@@ -37,7 +38,7 @@ For production, use the following command to compile sources generating the bund
 npm run build
 ```
 
-## Packages
+## Built With
 - [React](https://reactjs.org/) :: A JavaScript library for building user interfaces.
 - [Redux](https://redux.js.org/) :: A Predictable State Container for JS Apps.
 - [React Router](https://reactrouter.com/web/guides/quick-start) :: A routing library for React.
@@ -50,16 +51,25 @@ npm run build
 - [EsLint](https://eslint.org) :: Find and fix problems in your JavaScript code.
 - [Prettier](https://prettier.io) :: Opinionated Code Formatter.
 
-## References
-
-- [React Setup](https://www.andrewmin.info/blog/react-setup/) :: Setup ESLint + Prettier + AirBnB Style with Create React App
-- [Folder Structure](https://dev.to/gkhan205/best-scalable-react-app-architecture-2020-9fn) :: Best Scalable React App Structure 2020
-- [Redux Duck](https://medium.com/@matthew.holman/what-is-redux-ducks-46bcb1ad04b7) & [Duck Proposal](https://github.com/erikras/ducks-modular-redux) :: What is Redux Ducks?
-
 ## Support
 
 Please [open an issue](https://github.com/Arzion-SRL/react-webpack5-boilerplate/issues/new) for support.
 
-## Contributing
+## Versioning and Contributing
+
+We use [SemVer](http://semver.org/) for versioning and [gitmoji](https://gitmoji.dev) for commit messages. For the versions available, see the [tags on this repository](https://github.com/Arzion-SRL/react-webpack5-boilerplate/tags).
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/Arzion-SRL/react-webpack5-boilerplate/compare/).
+
+
+## Authors
+
+* **JonyR** - *Initial work* - [JonyR](https://github.com/jonyr)
+
+See also the list of [contributors](https://github.com/Arzion-SRL/react-webpack5-boilerplate/contributors) who participated in this project.
+
+## Acknowledgments
+
+- [React Setup](https://www.andrewmin.info/blog/react-setup/) :: Setup ESLint + Prettier + AirBnB Style with Create React App
+- [Folder Structure](https://dev.to/gkhan205/best-scalable-react-app-architecture-2020-9fn) :: Best Scalable React App Structure 2020
+- [Redux Duck](https://medium.com/@matthew.holman/what-is-redux-ducks-46bcb1ad04b7) & [Duck Proposal](https://github.com/erikras/ducks-modular-redux) :: What is Redux Ducks?
