@@ -6,6 +6,7 @@ Start your next react project in seconds using this boilerplate.
 ## Table of Contents
 
 - [Installation](#installation)
+- [Webpack 5](#webpack-5)
 - [Usage](#usage)
 - [Built with](#build-with)
 - [Support](#support)
@@ -20,6 +21,20 @@ Clone the repository and install all the dependencies
 ```bash
 git clone https://github.com/Arzion-SRL/react-webpack5-boilerplate.git
 npm install
+```
+
+## Webpack 5
+
+### Environment Variables
+
+I'm using the webpack.DefinePlugin for environment variables.
+
+```javascript
+new webpack.DefinePlugin({
+    PRODUCTION: JSON.stringify(false),
+    VERSION: JSON.stringify('1234'),
+    BACKEND_URL: JSON.stringify('https://reqres.in/api'),
+}),
 ```
 ## Usage
 
