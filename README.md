@@ -73,3 +73,4 @@ See also the list of [contributors](https://github.com/Arzion-SRL/react-webpack5
 - [React Setup](https://www.andrewmin.info/blog/react-setup/) :: Setup ESLint + Prettier + AirBnB Style with Create React App
 - [Folder Structure](https://dev.to/gkhan205/best-scalable-react-app-architecture-2020-9fn) :: Best Scalable React App Structure 2020
 - [Redux Duck](https://medium.com/@matthew.holman/what-is-redux-ducks-46bcb1ad04b7) & [Duck Proposal](https://github.com/erikras/ducks-modular-redux) :: What is Redux Ducks?
+- [Split Webpack](https://dev.to/didof/how-to-split-dev-prod-webpack-configuration-n53) How to split dev/prod webpack configuration
