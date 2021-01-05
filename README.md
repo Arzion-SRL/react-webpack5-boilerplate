@@ -8,6 +8,7 @@ Start your next react project in seconds using this boilerplate.
 - [Installation](#installation)
 - [Webpack 5](#webpack-5)
 - [Usage](#usage)
+- [Docker](#docker)
 - [Built with](#build-with)
 - [Support](#support)
 - [Versioning and Contributing](#versioning-and-contributing)
@@ -51,6 +52,40 @@ npm run lint
 For production, use the following command to compile sources generating the bundle in the dist/* folder.
 ```bash
 npm run build
+```
+
+## Docker
+
+Build the container first:
+
+```bash
+docker build -t react-webpack5-boilerplate .
+```
+
+Run the container:
+
+```bash
+docker run --name react --rm -d -p 8080:80 react-webpack5-boilerplate
+```
+
+Run the container and mount a volume:
+
+```bash
+docker run -v /host/directory:/container/directory --name react --rm -d -p 8080:80 react-webpack5-boilerplate
+```
+
+> Note: the `--rm` flag automatically removes the container when it exits, so you just need to stop it and not to remove it manually, more info [here](https://docs.docker.com/engine/reference/run/#clean-up---rm)
+
+Use the bash shell of the container:
+
+```bash
+docker exec -t -i react /bin/bash
+```
+
+Stop the container:
+
+```bash
+docker stop react
 ```
 
 ## Built With
