@@ -11,8 +11,3 @@ ReactDOM.render(
     </Provider>,
     document.querySelector('#root')
 );
-
-// Hot Module Replacement
-if (module.hot) {
-    module.hot.accept();
-}
