@@ -16,7 +16,9 @@ module.exports = {
         hot: true,
         host: '0.0.0.0',
         port: 3000,
-        open: { app: ['Google Chrome', '--incognito'] },
+        open: true,
+        // Uncomment following line to open in Google Chrome Incognito
+        // open: { app: ['Google Chrome', '--incognito'] },
         overlay: {
             warnings: true,
             errors: true,
