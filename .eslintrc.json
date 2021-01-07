@@ -43,16 +43,6 @@
         "classes": "always"
       }
     ],
-    // "key-spacing": [
-    //   "error",
-    //   {
-    //     "align": {
-    //       "beforeColon": true,
-    //       "afterColon": true,
-    //       "on": "colon"
-    //     }
-    //   }
-    // ],
     "object-curly-newline": [
       "error",
       {
@@ -70,6 +60,7 @@
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -84,5 +75,6 @@
   "settings": {
     "import/resolver": {
       "babel-module": {}
+    }
   }
-}}
+}
