@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// eslint-disable-next-line no-undef
 const instance = axios.create({ baseURL: BACKEND_URL });
 
 const getUsers = async () => {

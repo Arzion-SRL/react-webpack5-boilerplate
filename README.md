@@ -37,6 +37,9 @@ new webpack.DefinePlugin({
     BACKEND_URL: JSON.stringify('https://reqres.in/api'),
 }),
 ```
+
+Following this [link](https://eslint.org/docs/user-guide/configuring#specifying-globals) you can take a look of how to properly setup *eslint* for allow global env variables.
+
 ## Usage
 
 For development
